@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DC COMICS TRIVIA GAME!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32" />
+   
+</head>
+
+    <body>
+        <!--Container for background-->
+        <div class='container'>
+            <!--Start Button-->
+            <div class="back">
+                <img id="imgg" src="./assets/images/JL.gif">
+    
+                <button class='hvr-grow' id='startBtn'>Click to begin!</button>
+            </div>
+            <!-- Question page -->
+            <div id="game-play">
+    
+                <div id="timer"></div>
+    
+                <div id="currentQuestion"></div>
+    
+                <div class="question"></div>
+    
+                <div class="answerList"></div>
+    
+    
+                <!-- Scoreboard page -->
+                <div id="finalMessage"></div>
+    
+                <div id="correctAnswers"></div>
+    
+                <div id="wrongAnswers"></div>
+    
+                <div id="unanswered"></div>
+    
+                <div button class="hvr-grow" id="startAgainBtn">
+                    </button>
+                </div>
+    
+                <!--Answer Page-->
+                <div id="message">
+                    <h1>INSTRUCTIONS:</h1>
+                    <p>Answer each question before time runs out!</p>
+                </div>
+    
+                <div id="correctedAnswer"></div>
+    
+            </div>
+        </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>

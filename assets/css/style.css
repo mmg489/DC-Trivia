@@ -1,0 +1,125 @@
+body{
+    background-image: url("./assets/images/background.jpg");
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+ 
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+img {
+    position: relative;
+}
+
+/*START GAME PAGE*/
+#startBtn {
+font-size: 50px;
+margin-top: 5%;
+margin-bottom: 5%;
+font-family: 'Permanent Marker', cursive;;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+h1{
+    font-family: Righteous,cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+p{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+/*QUESTION PAGE*/
+#game-play {
+    background-color: lightsteelblue;
+}
+
+#timer {
+    font-size: 20px;
+    border-bottom: 2px solid darkred;
+    padding: 2px;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+#currentQuestion {
+    font-size: 20px;
+    border-bottom: 2px solid darkred;
+}
+.question {
+    padding-top: 5%;
+    font-size: 40px;
+    border-bottom: 2px solid darkred;
+    font-family: 'Permanent Marker', cursive;
+}
+.answerList{
+    font-size: 30px;
+    border-bottom: 2px solid darkred;
+}
+/*ANSWER PAGE*/
+#correctedAnswer {
+    font-size: 20px;
+    background-color: darkred;
+    font-family: 'Permanent Marker', cursive;
+}
+#message {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+
+/*SCOREBOARD*/
+#finalMessage {
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+}
+#correctAnswers {
+    font-size: 20px;
+}
+#wrongAnswers{
+    font-size: 20px;
+}
+#unanswered {
+    font-size: 20px;
+}
+
+#startAgainBtn {
+    font-size: 40px;
+    border: solid 5px darkred;
+    background-color: black;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 10px;
+}
+
+/*RESPONSIVENESS*/
+@media screen and (max-width:640px){
+	.container{
+		width: 80%;
+		size: 200%;
+    }}
+    
+.thisChoice:hover{
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 5px;
+}
