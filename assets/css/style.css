@@ -1,5 +1,5 @@
 body{
-    background-image: url("./assets/images/background.jpg");
+    background-image: url(./assets/images/JusticeLeague.jpg);
     width: 100%;
     text-align: center;
 }
@@ -14,35 +14,28 @@ img {
     position: relative;
 }
 
+/**#backgroundPic {
+    background-image: url();
+    z-index: 0;
+    left:0px;
+    top:0px;
+}
+
 /*START GAME PAGE*/
 #startBtn {
-font-size: 50px;
+font-size: 30px;
 margin-top: 5%;
 margin-bottom: 5%;
-font-family: 'Permanent Marker', cursive;;
+font-family: 'Permanent Marker', cursive;
 }
 
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
 
 h1{
-    font-family: Righteous,cursive;
+    font-family: 'Permanent Marker', cursive;
     font-size: 20px;
     margin-bottom: 10px;
-    background-color: whitesmoke;
+    background-color: goldenrod;
 }
 p{
     padding-bottom: 10px;
@@ -51,39 +44,45 @@ p{
 
 /*QUESTION PAGE*/
 #game-play {
-    background-color: lightsteelblue;
+    background-color: black;
 }
 
 #timer {
     font-size: 20px;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid goldenrod;
     padding: 2px;
     font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
     
 }
 #currentQuestion {
     font-size: 20px;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid goldenrod;
+    color: whitesmoke;
 }
 .question {
     padding-top: 5%;
     font-size: 40px;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid goldenrod;
     font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
 }
 .answerList{
     font-size: 30px;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid goldenrod;
+    color: whitesmoke;
 }
 /*ANSWER PAGE*/
 #correctedAnswer {
     font-size: 20px;
-    background-color: darkred;
+    background-color: goldenrod;
     font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
 }
 #message {
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
+    color: whitesmoke;
 }
 
 
@@ -92,6 +91,7 @@ p{
     font-size: 30px;
     font-family: 'Permanent Marker', cursive;
     margin-bottom: 10px;
+    color: whitesmoke;
 }
 #correctAnswers {
     font-size: 20px;
@@ -105,7 +105,7 @@ p{
 
 #startAgainBtn {
     font-size: 40px;
-    border: solid 5px darkred;
+    border: solid 5px goldenrod;
     background-color: black;
     font-family: 'Permanent Marker', cursive;
     margin-top: 10px;

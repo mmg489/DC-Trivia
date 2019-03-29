@@ -9,13 +9,13 @@ $(document).ready(function () {
     var Questions = [{
         //Question 1:
         question: "What is the name of the actress that stars as Wonder Woman?",
-        answerList: ["Gal Gadot", "Amy Adams", "Hayley Atwell", "Elizabeth Olsen"],
-        answer: 0
+        answerList: ["Hayley Atwell", "Amy Adams", "Gal Gadot", "Elizabeth Olsen"],
+        answer: 2
     }, {
         //Question 2:
         question: " Which member of the Justice League has the power of the speed force?",
-        answerList: ["The Flash", "Aquaman", "Wonder Woman", "Batman"],
-        answer: 0
+        answerList: ["Batman", "Aquaman", "Wonder Woman", "The Flash"],
+        answer: 3
     }, {
         //Question 3:
         question: "Oliver Queen is the alter ego of what hero?",
@@ -24,8 +24,8 @@ $(document).ready(function () {
     }, {
         //Question 4:
         question: "Of the following heroes, which one is also a member of a royal family?",
-        answerList: ["Aquaman", "The Flash", "Batman", "Cyborg"],
-        answer: 0
+        answerList: ["Batman", "The Flash", "Aquaman", "Cyborg"],
+        answer: 2
     }, {
         //Question 5:
         question: "Where is Wonder Woman originally from?",
@@ -34,13 +34,13 @@ $(document).ready(function () {
     }, {
         //Question 6: 
         question: "What is Superman's dayjob?",
-        answerList: ["Reporter", "Coach", "Fisherman", "Police Man"],
-        answer: 0
+        answerList: ["Coach", "Reporter", "Fisherman", "Police Man"],
+        answer: 1
     }, {
         //Question 7: 
         question: "Batman's sidekick, Robin, grew up to be who?",
-        answerList: ["Nightwing", "Ra's al Ghul", "Green Lantern", "The Joker"],
-        answer: 0
+        answerList: ["Green Lantern", "Ra's al Ghul", "Nightwing", "The Joker"],
+        answer: 2
     }, {
         //Question 8: 
         question: "What sport did Cyborg play in high school?",
@@ -49,28 +49,28 @@ $(document).ready(function () {
     }, {
         //Question 9:
         question: "Where was Clark Kent raised?",
-        answerList: ["Kansas", "Gotham City", "New York City", "Atlanta"],
-        answer: 0
+        answerList: ["Georgia", "Gotham City", "New York City", "Kansas"],
+        answer: 3
     }, {
         //Question 10:
         question: "Wonder Woman adopted the role of whom after his death?",
-        answerList: ["Aries","Cheetah", "Doomsday", "Deathstroke"],
-        answer: 0
+        answerList: ["Doomsday","Cheetah", "Aries", "Deathstroke"],
+        answer: 2
     }, {
         //Question 11:
         question: "What is Supergirl's alter ego?",
-        answerList: ["Kara Zor-El", "Melissa Benoist", "Laura Vandervoort", "Helen Slater"],
-        answer: 0
+        answerList: ["Laura Vandervoort", "Melissa Benoist", "Kara Zor-El", "Helen Slater"],
+        answer: 2
     }, {
         //Question 12:
         question: "What is Batman also commonly referred to as?",
-        answerList: ["The Dark Knight", "Scarlet Speedster", "Man of Steel", "The Archer"],
-        answer: 0
+        answerList: ["The Archer", "Scarlet Speedster", "Man of Steel", "The Dark Knight"],
+        answer: 3
     }, {
         //Question 13:
         question: "Who is Billy Batson?",
-        answerList: ["Shazam", "The Flash", "Green Lantern", "Hawkman"],
-        answer: 0
+        answerList: ["The Flash", "Shazam", "Green Lantern", "Hawkman"],
+        answer: 1
     }, {
         //Question 14:
         question: "Which of these is an ability that Superman possesses?",
@@ -79,13 +79,13 @@ $(document).ready(function () {
     }, {
         //Question 15:
         question: "What is Batman's super power?",
-        answerList: ["He's rich", "Flight", "Invulnerability", "Super Strength"],
-        answer: 0
+        answerList: ["Invulnerability", "Flight", "He's rich", "Super Strength"],
+        answer: 2
     }, {
         //Question 16:
         question: "What is the name of Wonder Woman's sidekick, Wonder Girl's alter ego?",
-        answerList: ["Donna Troy", "Diana Prince", "Barbara Gordon", "Kara Danvers"],
-        answer: 0
+        answerList: ["Diana Prince", "Donna Troy", "Barbara Gordon", "Kara Danvers"],
+        answer: 1
     }]
 
 
@@ -108,9 +108,9 @@ $(document).ready(function () {
     //messages for new screen after answer result 
     var messages = {
         correct: "Well done, nailed it!",
-        incorrect: " Sorry, wrong answer!",
-        endTime: "TIME'S UP!",
-        finished: "Game Over"
+        incorrect: "Sorry, wrong answer!",
+        endTime: "Time's Up!",
+        finished: "Game Over!"
     }
 
     //FUNCTIONS 
