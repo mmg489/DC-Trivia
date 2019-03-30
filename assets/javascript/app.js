@@ -135,7 +135,7 @@ $(document).ready(function () {
     //Counter
     function countDown() {
         //seconds per question
-        sec = 10;
+        sec = 12;
         $('#timer').html('<h3> Time Left: ' + sec + '</h3>');
         answered = true;
         //sets timer to go down
@@ -223,7 +223,7 @@ $(document).ready(function () {
         } else {
             //otherwise, display next question 
             currentQuestion++;
-            setTimeout(newQuestion, 2000);
+            setTimeout(newQuestion, 1000);
         }
     }
     //scoreboard at the end of the game
@@ -242,7 +242,7 @@ $(document).ready(function () {
         //reset game 
         $('#startAgainBtn').addClass('reset');
         $('#startAgainBtn').show();
-        $('#startAgainBtn').html('Start Over?');
+        $('#startAgainBtn').html('Try again!');
     }
 
 

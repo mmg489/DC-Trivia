@@ -1,6 +1,8 @@
 body{
     background-color: black;
     width: 100%;
+    font-family: 'Permanent Marker', cursive;
+    font: size 15px;
     text-align: center;
 }
 
@@ -10,10 +12,6 @@ body{
     margin-right: 25%;
 }
 
-img {
-    
-
-}
 
 #headerPic{
     height: 400px;
@@ -75,7 +73,7 @@ p{
 }
 .question {
     padding-top: 5%;
-    font-size: 40px;
+    font-size: 30px;
     border-bottom: 2px solid goldenrod;
     font-family: 'Permanent Marker', cursive;
     color: whitesmoke;
