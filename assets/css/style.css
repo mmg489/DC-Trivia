@@ -1,5 +1,5 @@
 body{
-    background-image: url(./assets/images/JusticeLeague.jpg);
+    background-color: black;
     width: 100%;
     text-align: center;
 }
@@ -11,12 +11,21 @@ body{
 }
 
 img {
-    position: relative;
+    
+
 }
 
-/**#backgroundPic {
-    background-image: url();
-    z-index: 0;
+#headerPic{
+    height: 400px;
+    width: 200px;
+
+}
+
+#backgroundPic {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
     left:0px;
     top:0px;
 }
@@ -27,6 +36,9 @@ font-size: 30px;
 margin-top: 5%;
 margin-bottom: 5%;
 font-family: 'Permanent Marker', cursive;
+color: goldenrod;
+background: black;
+opacity:0.8;
 }
 
 
@@ -45,6 +57,7 @@ p{
 /*QUESTION PAGE*/
 #game-play {
     background-color: black;
+    opacity: 0.8;
 }
 
 #timer {
@@ -95,12 +108,15 @@ p{
 }
 #correctAnswers {
     font-size: 20px;
+    color:whitesmoke;
 }
 #wrongAnswers{
     font-size: 20px;
+    color:whitesmoke;
 }
 #unanswered {
     font-size: 20px;
+    color:whitesmoke;
 }
 
 #startAgainBtn {
@@ -108,6 +124,7 @@ p{
     border: solid 5px goldenrod;
     background-color: black;
     font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
     margin-top: 10px;
 }
 
