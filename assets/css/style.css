@@ -12,6 +12,9 @@ body{
     margin-right: 25%;
 }
 
+img {
+    opacity: .7;
+}
 
 #headerPic{
     height: 400px;
