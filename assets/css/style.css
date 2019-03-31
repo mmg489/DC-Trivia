@@ -31,7 +31,7 @@ body{
     top:0px;
 }
 
-/*START GAME PAGE*/
+/*Game Start*/
 #startBtn {
 font-size: 30px;
 margin-top: 5%;
@@ -55,7 +55,7 @@ p{
     font-size: 18px;
 }
 
-/*QUESTION PAGE*/
+/*Questions*/
 #game-play {
     background-color: black;
     opacity: 0.8;
@@ -86,7 +86,7 @@ p{
     border-bottom: 2px solid goldenrod;
     color: whitesmoke;
 }
-/*ANSWER PAGE*/
+/*Answers*/
 #correctedAnswer {
     font-size: 20px;
     background-color: goldenrod;
@@ -100,7 +100,7 @@ p{
 }
 
 
-/*SCOREBOARD*/
+/*Scoreboard*/
 #finalMessage {
     font-size: 30px;
     font-family: 'Permanent Marker', cursive;
@@ -129,7 +129,7 @@ p{
     margin-top: 10px;
 }
 
-/*RESPONSIVENESS*/
+/*Responsiveness*/
 @media screen and (max-width:640px){
 	.container{
 		width: 80%;

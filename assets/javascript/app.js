@@ -239,11 +239,11 @@ $(document).ready(function () {
         }
         //once the last question is complete display scoreboard
         if (currentQuestion == (Questions.length - 1)) {
-            setTimeout(scoreBoard, 1000)
+            setTimeout(scoreBoard, 1500)
         } else {
             //otherwise, display next question 
             currentQuestion++;
-            setTimeout(newQuestion, 1000);
+            setTimeout(newQuestion, 1500);
         }
     }
     //scoreboard at the end of the game
