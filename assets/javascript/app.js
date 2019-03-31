@@ -10,82 +10,98 @@ $(document).ready(function () {
         //Question 1:
         question: "What is the name of the actress that stars as Wonder Woman?",
         answerList: ["Hayley Atwell", "Amy Adams", "Gal Gadot", "Elizabeth Olsen"],
-        answer: 2
+        answer: 2,
+        image: "./assets/images/ww1.gif"
     }, {
         //Question 2:
-        question: " Which member of the Justice League has the power of the speed force?",
-        answerList: ["Batman", "Aquaman", "Wonder Woman", "The Flash"],
-        answer: 3
+        question: " The Flash often battles which foe?",
+        answerList: ["The Joker", "Vibe", "Lobo", "Reverse Flash"],
+        answer: 3,
+        image: "./assets/images/TheFlash.gif"
     }, {
         //Question 3:
-        question: "Oliver Queen is the alter ego of what hero?",
-        answerList: ["Green Arrow", "Green Lantern", "Batman", "The Flash"],
-        answer: 0
+        question: "What is the Green Arrow's real name?",
+        answerList: ["Oliver Queen", "Barry Allen", "Thomas Wayne", "Harrison Wells"],
+        answer: 0,
+        image: "./assets/images/GA.gif"
     }, {
         //Question 4:
-        question: "Of the following heroes, which one is also a member of a royal family?",
-        answerList: ["Batman", "The Flash", "Aquaman", "Cyborg"],
-        answer: 2
+        question: "Aquaman is a member of the Royal family by way of whom?",
+        answerList: ["His Father", "His Girlfriend", "His Mother", "He isn't a royal"],
+        answer: 2,
+        image: "./assets/images/Aquaman.gif"
     }, {
         //Question 5:
         question: "Where is Wonder Woman originally from?",
         answerList: ["Themyscira", "Gotham City", "Central City", "Venus"],
-        answer: 0
+        answer: 0,
+        image:"./assets/images/ww4.gif"
     }, {
         //Question 6: 
         question: "What is Superman's dayjob?",
         answerList: ["Coach", "Reporter", "Fisherman", "Police Man"],
-        answer: 1
+        answer: 1,
+        image:"./assets/images/Supes3.gif"
     }, {
         //Question 7: 
         question: "Batman's sidekick, Robin, grew up to be who?",
         answerList: ["Green Lantern", "Ra's al Ghul", "Nightwing", "The Joker"],
-        answer: 2
+        answer: 2,
+        image: "./assets/images/Robin.gif"
     }, {
         //Question 8: 
-        question: "What sport did Cyborg play in high school?",
-        answerList: ["Football", "Soccer", "Volleyball", "Baseball"],
-        answer: 0
+        question: "Cyborg was a football star named what?",
+        answerList: ["Victor Stone", "Oscar Stone", "Henry Stone", "Alfred Stone"],
+        answer: 0,
+        image: "./assets/images/Cyborg.gif"
     }, {
         //Question 9:
         question: "Where was Clark Kent raised?",
         answerList: ["Georgia", "Gotham City", "New York City", "Kansas"],
-        answer: 3
+        answer: 3,
+        image: "./assets/images/Supes2.gif"
     }, {
         //Question 10:
         question: "Wonder Woman adopted the role of whom after his death?",
         answerList: ["Doomsday","Cheetah", "Aries", "Deathstroke"],
-        answer: 2
+        answer: 2,
+        image: "./assets/images/ww5.gif"
     }, {
         //Question 11:
         question: "What is Supergirl's alter ego?",
         answerList: ["Laura Vandervoort", "Melissa Benoist", "Kara Zor-El", "Helen Slater"],
-        answer: 2
+        answer: 2,
+        image: "./assets/images/Supergirl.gif"
     }, {
         //Question 12:
         question: "What is Batman also commonly referred to as?",
         answerList: ["The Archer", "Scarlet Speedster", "Man of Steel", "The Dark Knight"],
-        answer: 3
+        answer: 3,
+        image: "./assets/images/Batman2.gif"
     }, {
         //Question 13:
-        question: "Who is Billy Batson?",
-        answerList: ["The Flash", "Shazam", "Green Lantern", "Hawkman"],
-        answer: 1
+        question: "Shazam is how old?",
+        answerList: ["23", "15", "34", "42"],
+        answer: 1,
+        image: "./assets/images/Shazam.gif"
     }, {
         //Question 14:
         question: "Which of these is an ability that Superman possesses?",
-        answerList: ["Heat vision", "Telepathy", "Invisibility", "Elasticity"],
-        answer: 0
+        answerList: ["Freeze Breath", "Telepathy", "Invisibility", "Elasticity"],
+        answer: 0,
+        image: "./assets/images/Supes1.gif"
     }, {
         //Question 15:
         question: "What is Batman's super power?",
-        answerList: ["Invulnerability", "Flight", "He's rich", "Super Strength"],
-        answer: 2
+        answerList: ["Invulnerability", "Flight", "World Class Detective", "Super Strength"],
+        answer: 2,
+        image: "./assets/images/Batman3.gif"
     }, {
         //Question 16:
         question: "What is the name of Wonder Woman's sidekick, Wonder Girl's alter ego?",
         answerList: ["Diana Prince", "Donna Troy", "Barbara Gordon", "Kara Danvers"],
-        answer: 1
+        answer: 1,
+        image: "./assets/images/DT2.gif"
     }]
 
 
@@ -162,6 +178,10 @@ $(document).ready(function () {
         $('#message').empty();
         $('#correctedAnswer').empty();
         answered = true;
+        var img = $('<img id="image">');
+        $("img").hide();
+        img.attr("src", Questions[currentQuestion].image);
+        img.appendTo("#image");
 
         //sets up new question
         $('#currentQuestion').html('Question #' + (currentQuestion + 1) + '/' + Questions.length);
